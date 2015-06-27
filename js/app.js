@@ -73,7 +73,7 @@ var Player = function() {
 Player.prototype.update = function(dt) {
 	// When the player reaches the water, his position is reset to start anew
 	if (this.y < 53) {
-		player.reset();
+		this.reset();
 	}
 
 }
@@ -88,16 +88,16 @@ Player.prototype.handleInput = function(keyCode) {
 	// In the second condition check if the player would move out of bounds
 	// There is no second condition for the first case since the player
 	// is automatically reset to start when he reaches the water.
-	if (keyCode == "up") {
+	if (keyCode == 'up') {
 		this.y = this.y - 83;
 	}
-	else if (keyCode == "down" && this.y < 83 * 5 - 30) {
+	else if (keyCode == 'down' && this.y < 83 * 5 - 30) {
 		this.y = this.y + 83;
 	}
-	else if (keyCode == "left" && this.x > 101 * 0) {
+	else if (keyCode == 'left' && this.x > 101 * 0) {
 		this.x = this.x - 101;
 	}
-	else if (keyCode == "right" && this.x < 101 * 4) {
+	else if (keyCode == 'right' && this.x < 101 * 4) {
 		this.x = this.x + 101;
 	}
 }
