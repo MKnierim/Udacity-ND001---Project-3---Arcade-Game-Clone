@@ -1,7 +1,5 @@
-MK Udacity Frontend Nanodegree
+MK Udacity Frontend Nanodegree - Project 3: Arcade Game Clone
 ===============================
-Project 3: Arcade Game Clone
---------------------
 
 HOW TO RUN THE GAME:
 --------------------
@@ -17,6 +15,6 @@ Have fun!
 
 CONTACT
 --------------------
-Please feel free to contact me if you have any questions.
-E-Mail: contact@michaelknierim.info  
-GitHub: [https://github.com/MKnierim](https://github.com/MKnierim)  
+Please feel free to contact me if you have any questions....
+E-Mail: contact@michaelknierim.info...
+GitHub: [https://github.com/MKnierim](https://github.com/MKnierim)
