@@ -19,7 +19,7 @@ var Enemy = function() {
 
 	// The speed is randomly created in the interval between 1 (included) and 4 (excluded)
 	this.speed = Math.random() * (4 - 1) + 1;
-}
+};
 
 // Update the enemy's position, required method for the game
 // Parameter: dt, a time delta between ticks
@@ -46,12 +46,12 @@ Enemy.prototype.update = function(dt) {
 	if (this.y == player.y && entityDistance > -61 && entityDistance < 40) {
 		player.reset();
 	}
-}
+};
 
 // Draw the enemy on the screen, required method for the game
 Enemy.prototype.render = function() {
 		ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 // Now write your own player class
 // This class requires an update(), render() and
@@ -66,7 +66,7 @@ var Player = function() {
 	// symbolize the organisation in rows and columns of the game.
 	this.x = 101 * 2;
 	this.y = 83 * 5 - 30; //-30 is an offsett to put the player in the middle of the row
-}
+};
 
 // Update the player's position, required method for the game
 // Parameter: dt, a time delta between ticks
@@ -75,13 +75,12 @@ Player.prototype.update = function(dt) {
 	if (this.y < 53) {
 		this.reset();
 	}
-
-}
+};
 
 // Draw the player on the screen, required method for the game
 Player.prototype.render = function() {
 		ctx.drawImage(Resources.get(this.sprite), this.x, this.y);
-}
+};
 
 Player.prototype.handleInput = function(keyCode) {
 	// In the first condition check the pressed key
@@ -100,14 +99,14 @@ Player.prototype.handleInput = function(keyCode) {
 	else if (keyCode == 'right' && this.x < 101 * 4) {
 		this.x = this.x + 101;
 	}
-}
+};
 
 // A simple helper procedure to reset the player to its initial location
 // and to increase readability.
 Player.prototype.reset = function() {
 	this.x = 101 * 2;
 	this.y = 83 * 5 - 30;
-}
+};
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies

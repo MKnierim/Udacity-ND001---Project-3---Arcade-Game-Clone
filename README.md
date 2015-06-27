@@ -15,6 +15,6 @@ Have fun!
 
 CONTACT
 --------------------
-Please feel free to contact me if you have any questions....
-E-Mail: contact@michaelknierim.info...
+Please feel free to contact me if you have any questions.
+E-Mail: contact@michaelknierim.info
 GitHub: [https://github.com/MKnierim](https://github.com/MKnierim)
